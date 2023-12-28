@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+:root{
+    --mainColor : rgb(83, 80, 80);
+    --secondColor: hsl(0, 0%, 49%);
+    --mainBackground : #0077b6;
+    --secondBackground : white;
+    --blurBackground : #1d9f4ddc;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    font-family: 'Noto Sans';
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+#main-container{
+    /* display: none; */
+}
+header{
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.active{
+    color: black;
+    box-shadow: 2px 2px 2px rgb(219, 217, 217);
+    background-color: var(--secondBackground);
+}
+nav{
+    height: 10vh;
+    width: 94%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h2{
+    font-family: gabriola;
+    color: white;
+}
+
+.nav-list a{
+    padding: 8px;
+    position: relative;
+    font-weight: 500;
+    color: white;
+}
+.nav-list a::after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    bottom: 4px;
+    left: 6px;
+    position: absolute;
+    background-color: var(--mainBackground);
+    transition: width 0.5s;
+}
+.nav-list a:hover::after{
+    width: 80%;
+    color: var(--mainBackground);
+}
+
+.home{
+    height: 100vh;
+    background-image: url("https://media.istockphoto.com/id/1191678668/photo/modern-black-living-room-with-sofa-and-fireplace.jpg?s=612x612&w=0&k=20&c=uav7oYG1fzyLUZNuE_mmhQmcw58IxNmlj_Ue7brtbrw=");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home-top{
+    height: 63vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.hometop-left{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+.home-top p{
+    font-size: larger;
+    color: rgba(255, 255, 255, 0.899);
+}
+.home-top h2{
+    font-size: xx-large;
+    color: rgba(255, 255, 255, 0.86);
+}
+.hometop-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+.hometop-right .options{
+    width: 9rem;
+}
+.hometop-right select, .hometop-right input{
+    width: 95%;
+    border: 1px solid var(--mainBackground);
+    height: 2rem;
+    padding: 5px;
+    margin: 5px;
+}
+.hometop-right label{
+    padding: 5px;
+    text-transform: uppercase;
+}
+.hometop-right .options{
+    height: 4rem;
+    width: 8rem;
+    background-color: var(--mainBackground);
+}
+.hometop-right .roomsandguest input{
+    width: 6rem;
+    margin: auto;
+}
+.hometop-right .roomsandguest input{
+    height: 1.5rem;
+    padding:5px;
+}
+
+.home-bottom{
+    height: 40vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    background-color: var(--mainBackground);
+}
+.places-section{
+    width: 75%;
+    margin-top: -3rem;
+    padding: 2rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    background-color: var(--mainBackground);
+}
+.home-bottom .place{
+    width: 15rem;
+    height: 40vh;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.home-bottom .place img{
+    height: 80%;
+    width: 100%;
+}
+.home-bottom .place p{
+    padding: 15px;
+    font-weight: 600;
+}
+
+#btn{
+    height: 4rem;
+    width: 6rem;
+    font-size: large;
+    font-weight: 600;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#btn:hover{
+    background-color: var(--mainBackground);
+    color: white;
+}
+
+.Hotels{
+    margin-top: 5rem;
+}
+
+.Hotels .card-container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.card h1, .card p{
+    margin: auto;
+    text-align: center;
+}
+.Communities{
+    margin-top: 5rem !important;
+    height: 65vh;
+    background-color: var(--mainBackground);
+}
+.Communities h1{
+    padding: 1rem 0;
+}
+.community-container{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.community-card{
+    height: 50vh;
+    width: 20vw;
+    box-shadow: 0px 3px 5px rgb(218, 215, 215);
+    background-color: var(--secondBackground);
+    padding: 0.3rem 0.5rem;
+}
+.community-card img{
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contactus{
+    height: 40vh;
+    padding: 2rem;
+    background-color: var(--mainBackground);
+}
+.contactcontainer{
+    width: 90%;
+    margin: auto;
+}
+.contactusHeader{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contactlogo h1{
+    font-family: gabriola;
+    color: var(--secondBackground);
+}
+.connecthead h3{
+    color: var(--secondBackground);
+}
+.contactDetails{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+.contact a{
+    padding: 0.2rem 0;
+    color: white;
+}
+.socialMedia{
+    width: 7%;
+    display: flex;
+    flex-direction: column;
+}
+.socialMedia a{
+    padding: 0.2rem 0;
+}
+.socialMedia a i{
+    color: white;
+}
+.copyright{
+    height: 3vh;
+    margin-top: 2rem;
+}
+
+#hotelDetails{
+    display: none;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradice Stay</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body onscroll="addScrollEvent()">
+    <div id="main-container">
+        <header id="header">
+            <nav>
+                <div class="logo">
+                    <a href="./index.html">
+                        <h2 id="logo">Paradice Stay</h2>
+                    </a>
+                </div>
+                <!-- onclick="openTab(event)" -->
+                <div class="nav-list">
+                    <a href="#" class="navbar-list" id="home">Home</a>
+                    <a href="#Hotels" class="navbar-list" id="hotels">Hotels</a>
+                    <a href="#communities" class="navbar-list">Communities</a>
+                    <a href="#ContactUs" class="navbar-list">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <div class="home">
+            <div class="home-top">
+                <div class="hometop-left">
+                    <p>Welcome To The</p>
+                    <h2>Paradice stay</h2>
+                </div>
+                <div class="hometop-right">
+                    <div class="options">
+                        <label for="placeDropDown">Choose City</label>
+                        <select name="tripplace" id="placeDropDown">
+                            <option value="" selected>Select City</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Bangalore">Bangalore</option>
+                        </select>
+                    </div>
+                    <div class="options"><label for="room">Room</label><input id="room" type="number" value="1" /><br>
+                    </div>
+                    <div class="options"><label for="adult">Adults</label><input id="adults" type="number"
+                            value="2" /><br>
+                    </div>
+                    <div class="options"><label for="child">Child</label><input id="child" type="number" value="0" />
+                    </div>
+                    <button id="btn">See Price</button>
+                </div>
+            </div>
+            <div class="home-bottom">
+                <div class="places-section">
+                    <div class="place">
+                        <img src="https://q-xx.bstatic.com/xdata/images/region/250x250/49646.jpg?k=b7f38878b9164ee38e0b99c4d4646dbea76b7bf4add8464b1aa75e4c9d0efc6e&o="
+                            alt="">
+                        <p>Goa</p>
+                    </div>
+                    <div class="place">
+                        <img src="https://q-xx.bstatic.com/xdata/images/city/250x250/684765.jpg?k=3f7d20034c13ac7686520ac1ccf1621337a1e59860abfd9cbd96f8d66b4fc138&o="
+                            alt="">
+                        <p>Delhi</p>
+                    </div>
+                    <div class="place">
+                        <img src="https://q-xx.bstatic.com/xdata/images/city/250x250/971346.jpg?k=40eeb583a755f2835f4dcb6900cdeba2a46dc9d50e64f2aa04206f5f6fce5671&o="
+                            alt="">
+                        <p>Mumbai</p>
+                    </div>
+                    <div class="place">
+                        <img src="https://r-xx.bstatic.com/xdata/images/city/250x250/684534.jpg?k=d1fe86c22f2433f4e2dda14ddcbe80feb024b0fb30305e5684a1241fba5d4cff&o="
+                            alt="">
+                        <p>Bangalore</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a name="Hotels"></a>
+        <div class="Hotels">
+            <div class="card-container" id="card-container">
+
+            </div>
+        </div>
+        <a name="communities"></a>
+        <div class="Communities">
+            <h1>Connect With Other Travellers</h1>
+            <div class="community-container">
+                <div class="community-card">
+                    <img src="https://cf.bstatic.com/static/img/communities/cover-photo/300x300/india/e4f4cf85c7a3c87ad369dc3da2a7774957dae913.jpg"
+                        alt="">
+                    <h5>India</h5>
+                    <p>Travel Community</p>
+                    <p>155,073 travellers</p>
+                </div>
+                <div class="community-card">
+                    <img src="https://cf.bstatic.com/static/img/communities/cover-photo/300x300/croatia/842a8eae6cb4e0bcaa18db2a5126840ae711094c.jpg"
+                        alt="">
+                    <h5>Croatia</h5>
+                    <p>Travel Community</p>
+                    <p>148,569 travellers</p>
+                </div>
+                <div class="community-card">
+                    <img src="https://cf.bstatic.com/static/img/communities/cover-photo/300x300/travel-discussions/f43b42664bbf44f174b44c64fd71440b4af56888.jpg"
+                        alt="">
+                    <h5>Travel Discussions</h5>
+                    <p>View Forum</p>
+                    <p>599,436 travellers</p>
+                </div>
+                <div class="community-card">
+                    <img src="https://cf.bstatic.com/static/img/communities/communities-index/photo-300x300/592ac5a7bbd5433c1aba6f1afdea794e572c9a69.png"
+                        alt="">
+                    <h5>More Communities</h5>
+                    <p>View All</p>
+                    <p>9,894,940 travellers</p>
+                </div>
+            </div>
+        </div>
+        <a name="ContactUs"></a>
+        <div class="contactus">
+            <div class="contactcontainer">
+                <div class="contactusHeader">
+                    <div class="contactlogo">
+                        <h1>Paradice Stay</h1>
+                    </div>
+                    <div class="connecthead">
+                        <h3>Stay Connected</h3>
+                    </div>
+                </div>
+                <div class="contactDetails">
+                    <div class="contact">
+                        <a href="#ContactUs">support.papaikumarpaul@gmail.com</a>
+                        <a href="#ContactUs">hep.papaikumarpaul@gmail.com</a>
+                        <a href="#ContactUs">customer.service.papaikumarpaul@gmail.com</a>
+                        <a href="#ContactUs">Out Partners</a>
+                    </div>
+                    <div class="socialMedia">
+                        <a href="#ContactUs"><i class="bi bi-twitter"></i></a>
+                        <a href="#ContactUs"><i class="bi bi-instagram"></i></a>
+                        <a href="#ContactUs"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <h6>copyright &copy 1996-2023 Paradice.com.All rights reserved</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="details-container">
+    </div>
+
+    <div id="hotelDetails">
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
